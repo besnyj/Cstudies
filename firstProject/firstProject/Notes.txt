@@ -24,6 +24,12 @@ the .dll file for example.
     - keywords can't be used as variable names
     - first character cannot be a digit
     - names are case-sensitive.
+    - bool are boolean that can only take two values: true or false.
+        - it is possible to create a boolean sing operators as such:
+        var isLargerThan5 = 10 > 5;
+        - here, we created a boolean with a "true" value as 10 is
+        indeed larger than 5. It is possible to do that with all the other
+        operators.
 
 - operators:
     - +, -, *, /
@@ -31,6 +37,12 @@ the .dll file for example.
      are evaluated before the operators with lower precedence.
     - always use parenthesis when using operators
     - ++a or --b will increment or decrement  the value by one
+    - == if something is equal to something else
+    - != inequality operator
+    - >, <, >=, <= work as usual
+    - % returns the remainder the division of X by Y
+    -
+
 
 - explicitly typed variables are variables initialized with
   specific types as int, strings and etc.
@@ -41,4 +53,6 @@ the .dll file for example.
 - debugging with breakpoints:
     - gives the chance to look at the state of our code without
     having to use the "print" function on the console.
-    
+
+- // are used to add comment to the code
+- /* this is used for multiple line comments */

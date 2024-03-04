@@ -5,3 +5,4 @@ Console.WriteLine("User input: " + userChoice);
 userChoice = "ABC";
 
 var result = "a" + "b";
+
