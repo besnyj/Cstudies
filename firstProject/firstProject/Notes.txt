@@ -6,3 +6,33 @@ our project with other people. Other files are also important as
 the .dll file for example.
 
 - every code in C# is compiled into a .dll
+
+- variables:
+    - has to have a type, value and name.
+    - variables cannot change type
+    - when using the variable for the first time, remember to declare
+    the variable type.
+    - it is possible to create our own types.
+    - strings are texts and ints are full numbers
+
+    - declaration means that a variable with given type and name will
+    exist.
+    - initialization is assign the value for the given variable.
+    - initialization at declariation is creating the variable and assign
+    a value at the same line
+    - it is possible to declare multiple variables in the same line
+    - keywords can't be used as variable names
+    - first character cannot be a digit
+    - names are case-sensitive.
+
+- operators:
+    - +, -, *, /
+    - In an expression with multiple operators, the operators with higher precedence
+     are evaluated before the operators with lower precedence.
+    - always use parenthesis when using operators
+    - ++a or --b will increment or decrement  the value by one
+
+- explicitly typed variables are variables initialized with
+  specific types as int, strings and etc.
+- implicitly typed variables are variables initialized with
+  the "var" keyword. They also can't change types after being declared.

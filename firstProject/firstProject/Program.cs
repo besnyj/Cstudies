@@ -1,4 +1,5 @@
 ﻿using System;
 
-Console.WriteLine("Giovani melhor Renek br");
-Console.ReadKey();
+string userInput;
+userInput = Console.ReadLine();
+Console.WriteLine(userInput);
