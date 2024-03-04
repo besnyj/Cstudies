@@ -1,0 +1,29 @@
+Here are the most useful code snippets:
+cw - 	Creates a call to Console.WriteLine
+ctor - Creates a constructor for the containing class
+prop - Creates an auto-implemented property declaration
+propfull - Creates a property declaration with get and set accessors
+propg - Creates a read-only auto-implemented property with a private set accessor
+class - Creates a class declaration
+struct - Creates a struct declaration
+enum - Creates an enum declaration
+do - Creates a do-while loop
+while - Creates a while loop
+for - Creates a for loop
+foreach - Creates a foreach loop
+if - Creates an if block
+else - Creates an else block
+switch - Creates a switch block
+try - Creates a try-catch block
+tryf - Creates a try-catch-finally block
+indexer - Creates an indexer declaration
+equals - Creates a method declaration that overrides the Equals method defined in the Object class
+attribute - Creates a declaration for a class that derives from Attribute
+exception - Creates a declaration for a class that derives from Exception
+
+-=-=-=-=-=-=-=-=-=--=
+
+- download and install .NET sdk from microsoft website
+- on console for the folder where you want to create the new project:
+    - dotnet new console -o "name of the app"
+    - dotnet run - will run the app

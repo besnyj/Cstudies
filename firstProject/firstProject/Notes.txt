@@ -1,0 +1,8 @@
+- Compilation: process of transforming the source code into a
+format that the computer can understand. That's what a compiler'll do.
+
+- After "build", a .exe file is created and we can use that to share
+our project with other people. Other files are also important as
+the .dll file for example.
+
+- every code in C# is compiled into a .dll
