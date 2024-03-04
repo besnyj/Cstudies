@@ -1,5 +1,7 @@
 ﻿using System;
 
-string userInput;
-userInput = Console.ReadLine();
-Console.WriteLine(userInput);
+var userChoice = Console.ReadLine();
+Console.WriteLine("User input: " + userChoice);
+userChoice = "ABC";
+
+var result = "a" + "b";

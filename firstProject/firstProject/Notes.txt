@@ -36,3 +36,9 @@ the .dll file for example.
   specific types as int, strings and etc.
 - implicitly typed variables are variables initialized with
   the "var" keyword. They also can't change types after being declared.
+-code snippets are quick way of inserting code into the program.
+
+- debugging with breakpoints:
+    - gives the chance to look at the state of our code without
+    having to use the "print" function on the console.
+    
