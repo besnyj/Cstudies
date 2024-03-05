@@ -84,3 +84,15 @@ ex:     var isEqualTo123OrEvenAndSmallerThan20 =
 
     * remember that elif will only be checked if the first IF does not pass. However if we
     use if and if, it will independently check both ifs and return both answers
+
+- scopes: defines a part of the program where a particular variable is accessible.
+- code block is a block defined by curly brackets
+
+* pro tip: avoid repetitions on your code
+
+- methods are the same as functions in c#
+    - to create a method:
+        void MethodName(return var type args)
+        {
+            method
+        }
