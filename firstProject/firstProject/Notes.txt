@@ -96,3 +96,12 @@ ex:     var isEqualTo123OrEvenAndSmallerThan20 =
         {
             method
         }
+    * parameters are the values defined at the definition of the function
+    * arguments are the actual values passed to the methods
+
+- types of methods in C#: if we define the method as a void method,
+    it will not return any value. However for example if we define a method
+    as a string, it should return a string or the code will not compile.
+    * void methods should not return anything.
+    * all paths in a non-void method must return a value
+    * remember that the keyword return always ends the method execution

@@ -1,12 +1,20 @@
 ﻿
 
+
 using System;
 
-var userChoice = Console.ReadLine();
-
-void UserChoicePrint(string text)
+int Add(int a, int b)
 {
-    Console.WriteLine(text);
+    int result;
+
+    if((a+b)>10)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
 }
 
-UserChoicePrint(userChoice);
+
