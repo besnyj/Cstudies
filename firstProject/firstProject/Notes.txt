@@ -73,7 +73,14 @@ ex:     var isEqualTo123OrEvenAndSmallerThan20 =
     {
         Console.WriteLine("User typed ABC")
     }
+    else if(userChoice = "")
+    {
+        Console.WriteLine("User typed nothing")
+    }
     else
     {
         Console.WriteLine("User did not type ABC")
     }
+
+    * remember that elif will only be checked if the first IF does not pass. However if we
+    use if and if, it will independently check both ifs and return both answers
