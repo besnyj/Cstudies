@@ -1,8 +1,8 @@
 ﻿using System;
 
-var userChoice = Console.ReadLine();
-Console.WriteLine("User input: " + userChoice);
-userChoice = "ABC";
+int number = 10;
 
-var result = "a" + "b";
+bool isBetween = number > 20 || number < 15;
+
+Console.WriteLine(isBetween);
 

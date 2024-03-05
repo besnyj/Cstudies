@@ -41,7 +41,13 @@ the .dll file for example.
     - != inequality operator
     - >, <, >=, <= work as usual
     - % returns the remainder the division of X by Y
-    -
+    - AND (&&) and OR (||) are the usual and or or operators in C#.
+        - && will check if all the conditions are met
+        - || checks if any condition is met
+
+* pro tip: we can break the lines into two to make it more readable:
+ex:     var isEqualTo123OrEvenAndSmallerThan20 =
+            number == 123 || (number % 2 == 0 && number < 20);
 
 
 - explicitly typed variables are variables initialized with
