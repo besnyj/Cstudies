@@ -3,18 +3,7 @@
 
 using System;
 
-int Add(int a, int b)
-{
-    int result;
+string a = "10";
 
-    if((a+b)>10)
-    {
-        return 1;
-    }
-    else
-    {
-        return 0;
-    }
-}
-
-
+int b = int.Parse(a);
+Console.WriteLine(b.GetType());

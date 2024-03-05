@@ -105,3 +105,31 @@ ex:     var isEqualTo123OrEvenAndSmallerThan20 =
     * void methods should not return anything.
     * all paths in a non-void method must return a value
     * remember that the keyword return always ends the method execution
+    * it is possible to create methods with custom parameters, for example
+    setting a class as a parameter:
+        int CountOfLegs(Animal anima)
+        {
+            return animal.Legs.Count;
+        }
+
+* pro tip: when using if statements to check a condition, use return false
+    instead of else. For ex:
+
+        if(input.Length > 10)
+        {
+            return true;
+        }
+        return false;
+
+        or, we can simplify it even more:
+        - return input.Length > 10;
+
+        - code refactoring is the process of improving the code quality without
+            altering its behavior.
+
+
+- C# is a statically-typed programming language, meaning that the compiler
+    will check if there are no type mismatches during the compilation.
+- Runtime errors happen when the application is running.
+- Compilation errors happen during the compilation.
+-
