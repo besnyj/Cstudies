@@ -37,7 +37,6 @@ string Calculator(int a, int b)
 Console.WriteLine("Press any key to close");
 Console.ReadKey();
 
-<<<<<<< HEAD
 // Professor Solution -=-=-=-=-=-=-=-=-=-=-
 
 Console.WriteLine("Hello!");
@@ -66,7 +65,4 @@ if (choice == "A" || choice == "a")
 
 Console.WriteLine("Press any key to close");
 Console.ReadKey();
-=======
-
->>>>>>> origin/master
 
