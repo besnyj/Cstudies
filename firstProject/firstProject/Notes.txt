@@ -49,6 +49,11 @@ the .dll file for example.
 ex:     var isEqualTo123OrEvenAndSmallerThan20 =
             number == 123 || (number % 2 == 0 && number < 20);
 
+* pro tip: short-circuiting -  when comparing more than one condition using
+    and or or, compare the smaller operations first as it will save time in case
+    the conditions are/are not met, so the program doesnt need to spend time
+    with the more complex calculations.
+
 
 - explicitly typed variables are variables initialized with
   specific types as int, strings and etc.
@@ -62,3 +67,13 @@ ex:     var isEqualTo123OrEvenAndSmallerThan20 =
 
 - // are used to add comment to the code
 - /* this is used for multiple line comments */
+
+- if and else example in C#:
+    - if(userChoice == "ABC")
+    {
+        Console.WriteLine("User typed ABC")
+    }
+    else
+    {
+        Console.WriteLine("User did not type ABC")
+    }

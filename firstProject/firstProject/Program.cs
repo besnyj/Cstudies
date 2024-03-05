@@ -1,8 +1,15 @@
-﻿using System;
+﻿
+using System;
 
-int number = 10;
+string userChoice = Console.ReadLine();
 
-bool isBetween = number > 20 || number < 15;
+if (userChoice == "ABC")
+{
+    Console.WriteLine("User typed ABC");
+}
+else
+{
+    Console.WriteLine("User did not type ABC");
+}
 
-Console.WriteLine(isBetween);
-
+Console.ReadKey();
