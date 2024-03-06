@@ -1,30 +1,10 @@
 ﻿using System;
 
-int points = int.Parse(Console.ReadLine());
+string word;
 
-char PointsToGrade(int points)
+do
 {
-    switch (points)
-    {
-        case >= 9:
-            return 'A';
-        case 8:
-        case 7:
-        case 6:
-            return 'B';
-        case 5:
-        case 4:
-        case 3:
-            return 'C';
-        case 2:
-        case 1:
-            return 'D';
-        case 0:
-            return 'E';
-        default:
-            return '!';
-
-    }
+    Console.WriteLine("enter a word longer than 10 letters");
+    word = Console.ReadLine();
 }
-
-Console.WriteLine(PointsToGrade(points));
+while(word.Length <= 10);

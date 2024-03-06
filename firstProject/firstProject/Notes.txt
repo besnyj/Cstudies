@@ -166,3 +166,37 @@ ex:     var isEqualTo123OrEvenAndSmallerThan20 =
         break;
 
     * check Calculator2 for a full example
+
+- loops in C#:
+    * pro tips: using operator += instead of x = x+1,
+        it also works with strings and other mathematical operators before the =.
+        ++ operator increments by 1. Ex: x++ or ++x;. These are different things and depending on
+        what you are coding, they might change the result of your code.
+
+    - while: it is executed as long as some condition is met
+        - while(X){
+            do this;
+            }
+
+    - do...while: the condition is checked after executing the code, so the code will always
+        be executed at least once:
+        do
+        {
+            do this;
+        }
+        while(condition);
+
+        - For example: this code will check if the user typed a word longer than 10 letters,
+            if not, it will keep asking until the condition is not met.
+        do
+        {
+            Console.WriteLine("enter a word longer than 10 letters");
+            word = Console.ReadLine();
+        }
+        while(word.Length <= 10);
+
+        * pro tip: assigning variables with default values could cause bugs in the future in case we
+            want to modify our code
+
+    - for:
+    - foreach:
