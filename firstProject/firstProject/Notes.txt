@@ -88,7 +88,7 @@ ex:     var isEqualTo123OrEvenAndSmallerThan20 =
 - scopes: defines a part of the program where a particular variable is accessible.
 - code block is a block defined by curly brackets
 
-* pro tip: avoid repetitions on your code
+* pro tip: avoid repetitions on your code, instead create methods to avoid the repetitions.
 
 - methods are the same as functions in c#
     - to create a method:

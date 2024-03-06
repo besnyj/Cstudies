@@ -54,14 +54,24 @@ Console.WriteLine("[S]ubtract");
 Console.WriteLine("[M]ultiply");
 var choice = Console.ReadLine();
 
-if (choice == "A" || choice == "a")
+if (EqualsCaseInsensitive(choice, "A"))
 {
     var sum = number1 + number2;
-    Console.WriteLine(
-        number1 + "+" + number2 + "=" + sum);
+    PrintFinalEquation(number1, number2, sum, "+");
 }
 // repeats the above code block with else if statements
 // for the rest of the options
+
+void PrintFinalEquation(int number1, int number2, int result, string @operator)
+{
+    Console.WriteLine(
+        number1 + " " + @operator + " " + number2 + " = " + result);
+}
+
+bool EqualsCaseInsensitive(string left, string right)
+{
+    return left.ToUpper() == right.ToUpper();
+}
 
 Console.WriteLine("Press any key to close");
 Console.ReadKey();
