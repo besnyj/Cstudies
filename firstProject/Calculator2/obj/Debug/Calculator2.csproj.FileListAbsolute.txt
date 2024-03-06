@@ -1,0 +1,6 @@
+/Users/besnyj/Desktop/Cstuides/firstProject/Calculator2/bin/Debug/Calculator2.exe
+/Users/besnyj/Desktop/Cstuides/firstProject/Calculator2/bin/Debug/Calculator2.pdb
+/Users/besnyj/Desktop/Cstuides/firstProject/Calculator2/obj/Debug/Calculator2.csproj.AssemblyReference.cache
+/Users/besnyj/Desktop/Cstuides/firstProject/Calculator2/obj/Debug/Calculator2.csproj.CoreCompileInputs.cache
+/Users/besnyj/Desktop/Cstuides/firstProject/Calculator2/obj/Debug/Calculator2.exe
+/Users/besnyj/Desktop/Cstuides/firstProject/Calculator2/obj/Debug/Calculator2.pdb

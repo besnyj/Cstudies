@@ -14,6 +14,7 @@ the .dll file for example.
     the variable type.
     - it is possible to create our own types.
     - strings are texts and ints are full numbers
+    - char are strings of length 1, consisting of one letter. Use single quotes for them.
 
     - declaration means that a variable with given type and name will
     exist.
@@ -132,4 +133,36 @@ ex:     var isEqualTo123OrEvenAndSmallerThan20 =
     will check if there are no type mismatches during the compilation.
 - Runtime errors happen when the application is running.
 - Compilation errors happen during the compilation.
--
+
+- String Interpolation: the same of formatting strings in python
+    - in C#, use $ sign. Ex: $"First is {a}, second is {b}"
+
+- Switch statements: used to select one of many code blocks to be executed.
+    * specially useful when creating if statements with many mutually exclusive conditions
+    - For example, instead of using:
+    if a = b:
+        do this
+    else if a = c:
+        do this
+
+    we can write:
+    switch(A)
+    {
+    case B:
+        do this;
+        break;
+    case C:
+        do this;
+        break;
+
+    default: // this is like a final else
+        do this;
+        break;
+
+    if we want to add multiple options for one case, it is possible to do:
+    case A:
+    case B:
+        do this;
+        break;
+
+    * check Calculator2 for a full example
