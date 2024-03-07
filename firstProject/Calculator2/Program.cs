@@ -15,6 +15,7 @@ Console.WriteLine("[M]ultiply ");
 
 string userChoice = Console.ReadLine();
 
+
 switch (userChoice.ToUpper())
 {
     case "A":

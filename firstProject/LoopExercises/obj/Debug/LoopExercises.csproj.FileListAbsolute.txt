@@ -1,0 +1,6 @@
+/Users/besnyj/Desktop/Cstuides/firstProject/LoopExercises/bin/Debug/LoopExercises.exe
+/Users/besnyj/Desktop/Cstuides/firstProject/LoopExercises/bin/Debug/LoopExercises.pdb
+/Users/besnyj/Desktop/Cstuides/firstProject/LoopExercises/obj/Debug/LoopExercises.csproj.AssemblyReference.cache
+/Users/besnyj/Desktop/Cstuides/firstProject/LoopExercises/obj/Debug/LoopExercises.csproj.CoreCompileInputs.cache
+/Users/besnyj/Desktop/Cstuides/firstProject/LoopExercises/obj/Debug/LoopExercises.exe
+/Users/besnyj/Desktop/Cstuides/firstProject/LoopExercises/obj/Debug/LoopExercises.pdb
