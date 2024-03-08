@@ -210,4 +210,12 @@ ex:     var isEqualTo123OrEvenAndSmallerThan20 =
             * you can also increment the last section by 2, 4 or whatever. It is also possible to make it backwards:
                 - (int i=10; i>5; --i).
             * break keyword will stop the loop
+            * continue keyword stop the execution of the loop for a certain condition but not the loop itself
+            * string.All(char.IsDigit) checks if all the characters in an input are digits
+
+    - nested loops: for each run of the outer loop, the inner loop will run. Avoid nested loops whenever it is possible.
+        * however if necessary, move the havier code expression to the outer loop
     - foreach:
+
+- Array: the most basic collection type in C#, storing multiple elements of the same type.
+    - these are collections of fixed size, so once an array is created, its size cannot be changed.
