@@ -200,14 +200,14 @@ ex:     var isEqualTo123OrEvenAndSmallerThan20 =
 
     - for: used to execute a code a given number of times. The example below shows how to
         perform a for loop in C#:
-            - for(int=0, i<5, ++i){
+            - for(int i=0, i<5, ++i){
                 do this;
             }
 
             * realize that we must specify 3 sections. The first one is executed only one
             time before entering the loop, usually a local variable. It cant be accessed from outside
-            the loop. The next second is the condition and it must be a bool type expression.
-
-
-
+            the loop. The next section is the condition and it must be a bool type expression.
+            * you can also increment the last section by 2, 4 or whatever. It is also possible to make it backwards:
+                - (int i=10; i>5; --i).
+            * break keyword will stop the loop
     - foreach:
