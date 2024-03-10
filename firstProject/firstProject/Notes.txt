@@ -218,4 +218,5 @@ ex:     var isEqualTo123OrEvenAndSmallerThan20 =
     - foreach:
 
 - Array: the most basic collection type in C#, storing multiple elements of the same type.
-    - these are collections of fixed size, so once an array is created, its size cannot be changed.
+    - these are collectio
+    ns of fixed size, so once an array is created, its size cannot be changed.

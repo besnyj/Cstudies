@@ -41,8 +41,7 @@ switch (userChoice.ToUpper())
 Console.WriteLine("Press any key to leave");
 Console.ReadKey();
 
-string testingGitCommit;
-testingGitCommit = "Hello, tested";
+// removed the testing string
 
 void StringInterpolation(
     int number1, int number2, int result, string @operator)
