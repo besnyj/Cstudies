@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator2", "Calculator2\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopExercises", "LoopExercises\LoopExercises.csproj", "{AAFBDC5C-F15C-4CD5-AE95-601748933462}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Review", "Review\Review.csproj", "{5CD0E60E-3D5B-40E5-9404-44B4FD7A9CE8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{AAFBDC5C-F15C-4CD5-AE95-601748933462}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAFBDC5C-F15C-4CD5-AE95-601748933462}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAFBDC5C-F15C-4CD5-AE95-601748933462}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CD0E60E-3D5B-40E5-9404-44B4FD7A9CE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CD0E60E-3D5B-40E5-9404-44B4FD7A9CE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CD0E60E-3D5B-40E5-9404-44B4FD7A9CE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CD0E60E-3D5B-40E5-9404-44B4FD7A9CE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
