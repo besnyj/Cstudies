@@ -18,8 +18,8 @@ the .dll file for example.
 
     - declaration means that a variable with given type and name will
     exist.
-    - initialization is assign the value for the given variable.
-    - initialization at declariation is creating the variable and assign
+    - initialization is assigning the value for the given variable.
+    - initialization at declaration is creating the variable and assign
     a value at the same line
     - it is possible to declare multiple variables in the same line
     - keywords can't be used as variable names
@@ -52,7 +52,7 @@ ex:     var isEqualTo123OrEvenAndSmallerThan20 =
 
 * pro tip: short-circuiting -  when comparing more than one condition using
     and or or, compare the smaller operations first as it will save time in case
-    the conditions are/are not met, so the program doesnt need to spend time
+    the conditions are met, so the program doesnt need to spend time
     with the more complex calculations.
 
 
@@ -108,7 +108,7 @@ ex:     var isEqualTo123OrEvenAndSmallerThan20 =
     * remember that the keyword return always ends the method execution
     * it is possible to create methods with custom parameters, for example
     setting a class as a parameter:
-        int CountOfLegs(Animal anima)
+        int CountOfLegs(Animal animal)
         {
             return animal.Legs.Count;
         }
@@ -194,6 +194,7 @@ ex:     var isEqualTo123OrEvenAndSmallerThan20 =
             word = Console.ReadLine();
         }
         while(word.Length <= 10);
+        * have to declare the var "word" before the do...while loop
 
         * pro tip: assigning variables with default values could cause bugs in the future in case we
             want to modify our code
@@ -214,9 +215,9 @@ ex:     var isEqualTo123OrEvenAndSmallerThan20 =
             * string.All(char.IsDigit) checks if all the characters in an input are digits
 
     - nested loops: for each run of the outer loop, the inner loop will run. Avoid nested loops whenever it is possible.
-        * however if necessary, move the havier code expression to the outer loop
+        * however if necessary, move the heavier code expression to the outer loop
+
     - foreach:
 
 - Array: the most basic collection type in C#, storing multiple elements of the same type.
-    - these are collectio
-    ns of fixed size, so once an array is created, its size cannot be changed.
+    - these are collections of fixed size, so once an array is created, its size cannot be changed.
