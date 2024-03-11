@@ -15,6 +15,38 @@ the .dll file for example.
     - it is possible to create our own types.
     - strings are texts and ints are full numbers
     - char are strings of length 1, consisting of one letter. Use single quotes for them.
+    - declare an array type variable: int[] numbers; for ex
+        - new int[3]; will initialize the array with a size of 3
+        * array is a class and to create an instance of this class,
+            we must use the "new" keyword
+        - after initialized, the array will have empty/default values if nothing is assigned
+        - to assign values, ex: numbers[0] = 1;
+        - to inquire backwards, you can use numbers[numbers.Length -1] for example in a loop.
+            * However, use the ^ operator instead. For ex: numbers[ˆ1];
+            * pro tip: it is also possible to declare and initialize arrays like this:
+                - var numbers = new [] {1,2,3,4,5};
+                - it is an useful method if we know the elements of an array upfront.
+                - we do not need to declare the sie of the array as it infers from the
+                    amount of elements initialized. That also happens with the type.
+        - the main disadvantage of an array is that its size is fixed.
+        - ARRAYS ARE NOT EXACTLY LIKE LISTS.
+    - two dimensional arrays: like matrix of values. Each number is stored in a combination of indexes.
+        - very useful if we want to represent things like a chess board.
+        - declaring: char[,] letters = new char[2, 3];
+            - this creates a 2 by 3 table
+            - to assign values, for ex: letters[0, 0] = 'A';
+            - to initialize right at declaration:
+                var letters = new char[,]
+                {
+                    { 1, 2, 3},
+                    { 4, 5, 6}
+                };
+        - to iterate through this array, it's good to create two variable:
+            - var x (or height) = letters.GetLength(0); // GetLength will return the specific length for the given dimension
+              var y (or width) = letters.GetLength(1);
+            - from here on, just use a for loop.
+    - three dimensional arrays: are just like a cube, for example.
+
 
     - declaration means that a variable with given type and name will
     exist.
@@ -217,7 +249,19 @@ ex:     var isEqualTo123OrEvenAndSmallerThan20 =
     - nested loops: for each run of the outer loop, the inner loop will run. Avoid nested loops whenever it is possible.
         * however if necessary, move the heavier code expression to the outer loop
 
-    - foreach:
+    - foreach: iterates through a collection but instead of index, it goes through the elements themself.
+        - also, foreach loops dont require a specific bounds minimum or maximum.
+        foreach(var word in words)
+        {
+            code here
+        }
+
+    ** quick note: for loops are better when iterating on arrays, but foreach is a better option when iterating through lists.
+        - the for loop iterates over the list using its index, while foreach directly access each element of the list.
+        - the foreach takes more time as it uses extra memory spaces.
+        - both can achieve the same results, but foreach will be more readable and clean. However, For loop will have a better performance.
+        - also remember that the foreach won't give you access to the index, so if you want it, use the for loop.
+
 
 - Array: the most basic collection type in C#, storing multiple elements of the same type.
     - these are collections of fixed size, so once an array is created, its size cannot be changed.
