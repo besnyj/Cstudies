@@ -285,6 +285,8 @@ ex:     var isEqualTo123OrEvenAndSmallerThan20 =
         - both can achieve the same results, but foreach will be more readable and clean. However, For loop will have a better performance.
         - also remember that the foreach won't give you access to the index, so if you want it, use the for loop.
 
+    * pro tip: sometimes, creating a function to verify a condition is really helpful when leet coding.
+        - check this quiz for example: https://www.udemy.com/course/ultimate-csharp-masterclass/learn/quiz/5902762#overview
 
 - Array: the most basic collection type in C#, storing multiple elements of the same type.
     - these are collections of fixed size, so once an array is created, its size cannot be changed.
