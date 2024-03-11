@@ -46,6 +46,29 @@ the .dll file for example.
               var y (or width) = letters.GetLength(1);
             - from here on, just use a for loop.
     - three dimensional arrays: are just like a cube, for example.
+    ** because it is impossible to modify the size of the array,
+        arrays are most useful in cases we know the size of the collection upfront.
+    - list: collection of elements of a given type that its size is not fixed.
+        - how to declare: List<string> words = new List<string>(); *list is a class, so we need to use the "new" keyword
+        - it is possible to initialize the list with items in it:
+        List<string> words = new List<string>
+        {
+            "one",
+            "two"
+        };
+        * it is also possible to declare a list like this: var words = new List<string>;
+        - it's also possible to access item using the index just like arrays > words[i]
+        - methods:
+            Add(i) will add an element
+            Remove(i) will remove an element with the same given argument
+            RemoveAt(i) will remove the element in the given position
+            AddRange(i) takes a collection as a parameter and adds all the elements to the list
+                - it's also possible to make it like this:
+                    - list.AddRange(new [] {1,2,3});
+            IndexOf(i) will return the index of the element of the same given argument
+                - if the element is not in the list, this method will return a -1 value
+            Contains(i) will return a boolean if there is an element with the same given argument
+            Clear() will clear the list.
 
 
     - declaration means that a variable with given type and name will

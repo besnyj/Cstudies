@@ -1,5 +1,6 @@
 ﻿using System;
 using System.CodeDom;
+using System.Collections.Generic;
 
 
 // int result = 0;
@@ -43,3 +44,13 @@ using System.CodeDom;
 //     result += number;
 // }
 // Console.WriteLine(result);
+
+List<string> words = new List<string>();
+words.Add("hi");
+words.Add("bye");
+Console.WriteLine(words.Count);
+
+foreach (var word in words)
+{
+    Console.WriteLine(word);
+}
