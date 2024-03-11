@@ -45,12 +45,36 @@ using System.Collections.Generic;
 // }
 // Console.WriteLine(result);
 
-List<string> words = new List<string>();
-words.Add("hi");
-words.Add("bye");
-Console.WriteLine(words.Count);
+// List<string> words = new List<string>();
+// words.Add("hi");
+// words.Add("bye");
+// Console.WriteLine(words.Count);
+//
+// foreach (var word in words)
+// {
+//     Console.WriteLine(word);
+// }
 
-foreach (var word in words)
+
+int[] integersArray = new int[10];
+var integersArray2 = new[] { 10, 11, 12, 13 };
+
+char[,] characters = new char[2, 2]
 {
-    Console.WriteLine(word);
+    { 'a', 'b' },
+    { 'c', 'd' }
+};
+
+int x = characters.GetLength(0);
+int y = characters.GetLength(1);
+
+for (int i = 0; i < x; i++)
+{
+    for (int j = 0; j < y; j++)
+    {
+        Console.WriteLine(characters[i, j]);
+    }
 }
+
+
+
