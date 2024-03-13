@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 /* by adding the "out int countOfNonPositive", we are creating a new variable that must be returned

@@ -20,8 +20,8 @@ switch (userChoice.ToUpper())
 {
     case "A":
         int sum = (firstNumber + secondNumber);
-    StringInterpolation(
-        firstNumber, secondNumber, sum, "+");
+        StringInterpolation(
+            firstNumber, secondNumber, sum, "+");
         break;
     case "S":
         int sub = (firstNumber - secondNumber);
