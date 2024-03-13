@@ -293,3 +293,6 @@ ex:     var isEqualTo123OrEvenAndSmallerThan20 =
 
 - out keyword: is like a special messenger that helps a method return more than one value.
     - check outExample note for the better explanation on how it works
+    - the main difference here is that the OUT keyword makes it so the method won't create a copy
+      of the argument passed in the parameter, but will modify the value of the actual argument outside the method.
+- tryParse method: returns a bool if the parse was successful

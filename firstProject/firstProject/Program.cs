@@ -1,38 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
+﻿
 
-/* by adding the "out int countOfNonPositive", we are creating a new variable that must be returned
- at the end of the method. We have to initialize it with a type and as an parameter*/
-List<int> GetOnlyPositive(int[] numbers, out int countOfNonPositive) 
+using System;
+
+
+bool isParsingSuccessful;
+do
 {
-    var result = new List<int>();
-    countOfNonPositive = 0;
+    Console.WriteLine("Digite um");
+    string numero = Console.ReadLine();
 
-    foreach (var number in numbers)
-    {
-        if (number > 0)
-        {
-            result.Add(number);
-        }
-        else
-        {
-            countOfNonPositive++;
-        }
-    }
-    return result;
-}
+    isParsingSuccessful = int.TryParse(numero, out int number);
 
-var numbers = new[] {10,-8,2,12,-17};
+} while (isParsingSuccessful == false);
 
-/* when calling the method, we also need to give a variable as an argument. This givenm argument
- will become the out variable declared in the method*/
-int nonPositiveCount;
-var OnlyPositiveNumbers = GetOnlyPositive(numbers, out nonPositiveCount);
-/* after the method is finished, we can safely use the variable as it will now have an assigned value*/
-foreach (var number in OnlyPositiveNumbers)
-{
-    Console.WriteLine(number);
-}
-Console.WriteLine(nonPositiveCount);
-
-Console.ReadKey();
