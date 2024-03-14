@@ -291,4 +291,9 @@ ex:     var isEqualTo123OrEvenAndSmallerThan20 =
 - Array: the most basic collection type in C#, storing multiple elements of the same type.
     - these are collections of fixed size, so once an array is created, its size cannot be changed.
 
-- out keyword:
+- out keyword: word used as parameter to extract more than one value from the method in form of a variable.
+- TryParse: returns a bool if the input is parseable to int and returns the value of the string as an out variable
+
+** pro tip: whenever developing code, if you ever have repetition, create a method for it instead.
+** pro tip: when organizing the methods in a file, we want the more essential and high level methods at the top of the file.
+
