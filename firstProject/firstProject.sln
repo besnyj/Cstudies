@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopExercises", "LoopExerci
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Review", "Review\Review.csproj", "{5CD0E60E-3D5B-40E5-9404-44B4FD7A9CE8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TODOlist", "TODOlist\TODOlist.csproj", "{6690183F-E2A6-4435-9234-8963C05CBA37}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{5CD0E60E-3D5B-40E5-9404-44B4FD7A9CE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CD0E60E-3D5B-40E5-9404-44B4FD7A9CE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CD0E60E-3D5B-40E5-9404-44B4FD7A9CE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6690183F-E2A6-4435-9234-8963C05CBA37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6690183F-E2A6-4435-9234-8963C05CBA37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6690183F-E2A6-4435-9234-8963C05CBA37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6690183F-E2A6-4435-9234-8963C05CBA37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
