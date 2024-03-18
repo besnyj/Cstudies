@@ -1,13 +1,15 @@
 ﻿using System;
 
-var rectangle1 = new Rectangle();
-
-Console.WriteLine(rectangle1.width);
-
-
-class Rectangle
+class HotelBooking
 {
-    int width;
-    int height;
-}
+    public string GuestName;
+    public DateTime StartDate;
+    public DateTime EndDate;
 
+    public HotelBooking(string guestName, DateTime startDate, int lengthOfStayInDays)
+    {
+        GuestName = guestName;
+        StartDate = startDate;
+        EndDate = StartDate.AddDays(lengthOfStayInDays);
+    }
+}
