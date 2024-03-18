@@ -403,8 +403,42 @@ class Rectangle
     - while we actually might not see, there is a featured created to hide all the 10 lines of code
       defining the main class/program class that was necessary before. SO even though we might not see it
       if we are writing lines of code "without a class", there is actually a class.
+      This is the top-level statements feature.
+      It is only possible to use this in one file of the program.
+      Be aware that if we declare methods outside a class, they cannot have modifiers.
 
+- Declaring methods in a class:
+    - the name of a method should always start with a verb. This makes it easier to distinguish methods from fields and etc.
+    for ex:
 
+    // the default access modifier is always the one most restrictive that is valid in a given context.
+    // however, always specify the scope as it is a good practice.
+    private int CalculateCircumference()
+    {
+        return 2 * Width + 2 * Height;
+    }
+
+    public int CalculateAre()
+    {
+        return Width * Height;
+    }
+
+- Encapsulation: bundling data with methods that operate on this data (in single class).
+    - for example, if we look at the the above examples using the rectangle class, we defined the fields
+    and the methods inside the same class. This is encapsulation. Think of it as a pill (class) that has both methods and fields.
+
+    - However, it is possible to create the methods in a different class. We could've created a class dedicated only to calculate shapes, areas and etc.
+
+    class ShapesMeasurementsCalculator
+    {
+        public int CalculateRectangleArea(Rectangle rectangle)
+        {
+            return rectangle.Width * rectangle.Height;
+        }
+
+    }
+
+    ** check classExample code for a better explanation
 
 
 
