@@ -297,3 +297,57 @@ ex:     var isEqualTo123OrEvenAndSmallerThan20 =
 ** pro tip: whenever developing code, if you ever have repetition, create a method for it instead.
 ** pro tip: when organizing the methods in a file, we want the more essential and high level methods at the top of the file.
 
+-=-=-=-=-=-=-= Objected Oriented Programming in C# -=-=-=-=-=-=-=-
+- Why we need oop
+- Defining classes and specifying their methods, fields, properties, and constructors
+- Encapsulation, data hiding, abstraction
+- Designing classes
+- Single Responsibility Principle
+- Refactoring step-by-step
+
+- levels of abstraction:
+    - High:
+        - user can add TODOs
+        - app saves TODOs
+        - user can choose an action
+        - user can login to the app
+
+    - Low:
+        - communication via console/GUI
+        - MS SQL database is used to store TODOs
+        - user clicks a bootstrap-styled button to choose an action
+        - user can login with gmail and facebook accounts
+
+- antipattern: something we should avoid if our code is supposed to be of high quality.
+    - an example of this is spaghetti code.
+
+- Issues caused by procedural programming:
+    - spaghetti code
+    - no way to control who can access methods
+    - no separation by levels of abstraction
+    - changes in requirements are hard to implement
+    - logic is not easily configurable
+
+- Class: a blueprint for objects of the same type
+- Objects: containers for data and methods
+- Instance: same as objects
+
+- Constructor: a method used specifically to create new class instances
+
+- Abstraction: means that classes expose only essential data and methods and hide
+    the underlying details
+
+- How to declare a class in c#:
+
+class Rectangle
+{
+    int width; // a field is a variable that belongs to an object of a class
+    int height;
+}
+
+    - In this case, we are initializing the object without a constructor, meaning
+        that the default value for the parameters will be 0.
+
+    - However, even if we try to access the value of width and height, the code wont compile.
+        This is because of data hiding.
+
