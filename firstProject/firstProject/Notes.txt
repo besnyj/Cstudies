@@ -440,5 +440,13 @@ class Rectangle
 
     ** check classExample code for a better explanation
 
+    - However, which approach is better? It depends on the case =D.
+        For our example, encapsulation would be better as it is expected to find the calculators for a rectangle IN the rectangle class.
+            it is sort of a elementary method.
+            Also, using other class to calculate the values, forces us to make the data public. Usually, we do not want it.
+
+    - Encapsulation and DAta Hiding are not the same thing.
+        - Encapsulation is bundling data with methods that operate on it in the same class.
+        - Data hiding is making fields private instead of public.
 
 
