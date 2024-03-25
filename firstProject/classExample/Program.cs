@@ -1,26 +1,38 @@
 ﻿using System;
 
-Rectangle rectangle1 = new Rectangle(10, 10);
-var calculator = new ShapesMeasurementsCalculator();
-Console.WriteLine(calculator.CalculateRectangleArea(rectangle1));
+GeometricShapes square = new GeometricShapes(10, 10);
+GeometricShapes cube = new GeometricShapes(10, 10, 10);
 
-class Rectangle
+Console.WriteLine(square.Shape());
+Console.WriteLine(cube.Shape());
+
+
+class GeometricShapes
 {
-    public int Width;
-    public int Height;
+    private int _length;
+    private int _height;
+    private int _depth;
 
-    public Rectangle(int width, int height)
+    public GeometricShapes(int length, int height)
     {
-        Width = width;
-        Height = height;
-    }
-}
-
-class ShapesMeasurementsCalculator
-{
-    public int CalculateRectangleArea(Rectangle rectangle)
-    {
-        return rectangle.Width * rectangle.Height;
+        _length = length;
+        _height = height;
     }
 
+    public GeometricShapes(int length, int height, int depth)
+    {
+        _length = length;
+        _height = height;
+        _depth = depth;
+    }
+
+    public string Shape()
+    {
+        if (_depth == 0)
+        {
+            return "Square";
+        }
+
+        return "Cube";
+    }
 }

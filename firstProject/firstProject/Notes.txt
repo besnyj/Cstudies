@@ -449,4 +449,98 @@ class Rectangle
         - Encapsulation is bundling data with methods that operate on it in the same class.
         - Data hiding is making fields private instead of public.
 
+Method overloading: multiple methods with the same name in a single class.
+    - for example:
 
+    class MedicalAppointment
+    {
+        private string _patientName;
+        private DateTime _date;
+
+        public MedicalAppointment(string patientName, DateTime date)
+        {
+            _patientName = patientName;
+            _date = date;
+        }
+
+        public void Reschedule(DateTime date)
+        {
+            _date = date;
+        }
+
+        public void Reschedule(int month, int day)
+        {
+            _date = new DateTime(_date.Year, month, day);
+        }
+
+        // as you can see, we have two different methods with the same name in the same class.
+        // as long as we can tell the difference between both, it is fine. This is method overloading.
+        * both two methods have the same name but do different stuff, however similar.
+
+        public void Reschedule(int monthsToAdd, int daysToAdd)
+        {
+            _date = new DateTime(
+                _date.Year,
+                _date.Month + monthsToAdd,
+                _date.Day + daysToAdd);
+        }
+
+        // as you can see, this won't compile because this method and the previous one have the same signature.
+        // this is why when overloading, we have to make sure it is possible to distinguish them by parameters or etc but not returns.
+        // if such thing happens though, it is preferable to just rename the methods. For example MoveDays and etc.
+    }
+
+- when overloading, we can distinguish the methods through different parameters or different types of parameters.
+
+- overloading can also be done for constructors. Same rules are applied.
+
+- How to make methods shorter by converting them to expression-bodied methods:
+    - if your method only contains a single expression, you can write it in one line using a special
+      syntax
+
+      ** expression is something that evaluates to a value.
+        - ex: 1+2 or a GetText() method for example.
+        a statement is something that does not evaluate to a value
+        - ex: Console.WriteLine("Hi!").
+
+    special syntax:
+
+    - public int CalculateCircumference()
+    {
+        return 2*Width+2*Height;
+    }
+
+    becomes:
+
+    public int CalculateCircumference() => 2*Width+2*Height;
+
+    * However, keep in mind that we can only use this syntax when we only have one statement or expression in the method.
+
+- this keyword: refers to the current instance of the class. It can be used to access instance members, call other constructors, pass the current instance to other methods, and define extension methods.
+    - it is used in scenarios where there might be ambiguity between instance variables and parameters with the same name, or to explicitly reference the current instance within a method or constructor.
+    - for example, let's say I want a class Dog to have two different constructors, we can use the keyword "this" to make th code simpler.
+
+    public class Dog{
+        private string _name;
+        private string _breed;
+        private int _weight;
+
+        public Dog(string name, string breed, int weight){
+            _name = name;
+            _breed = breed;
+            _weight = weight;
+        }
+        // so far, so good. But let's create a constructor for cases where we don't have a breed assigned.
+
+        public Dog(string name, int weight) : this(name, "mixed-breed", weight)
+        {
+        }
+
+
+
+- optional parameters: optional parameters must appear after all required parameters.
+    - in case of ambiguity, the methods with no optional parameters are used.
+    - when using multiple optional parameters, we must remember that if we provide some of them, we must also provide all preceding optional parameters.
+    for ex:
+    // as you can see, the B variable is optional. We can change it's value when calling the method, but we are not obligated to use it.
+    int Subtract(int a, int b = 0)
