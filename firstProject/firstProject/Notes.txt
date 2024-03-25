@@ -544,3 +544,50 @@ Method overloading: multiple methods with the same name in a single class.
     for ex:
     // as you can see, the B variable is optional. We can change it's value when calling the method, but we are not obligated to use it.
     int Subtract(int a, int b = 0)
+    - the default value must be compile-time constant, meaning it needs to be a simple value like ints, strings or bools. It means it won't accept values that are valued at runtime.
+
+- How to validate the constructor parameters:
+    - For example, let's say a programmer wants to create a rectangle with negative values.
+
+    public Rectangle(int width, int height)
+    {
+        int defaultValueIfNonPositive = 1;
+        if(width <= 0)
+        {
+            Console.WriteLine("Width must be a positive number.");
+            Width = defaultValueIfNonPositive;
+        }
+        else
+        {
+            Width = width;
+        }
+
+        if(height <= 0)
+        {
+            Console.WriteLine("Height must be a positive number.");
+            Height = defaultValueIfNonPositive;
+        }
+        else
+        {
+            Height = height;
+        }
+    }
+
+    - However, this is very repetitive, so let's create a method to validate any of the numbers:
+
+    private int GetLengthOrDefault(int length, string name)
+    {
+        if (length < 0){
+        Console.WriteLine($"{name} must be a positive number.")
+        return defaultValueIfNonPositive;
+        }
+    }
+
+    - Now, let's apply it:
+
+    public Rectangle(int width, int height){
+        // nameof is better so in case we rename these things someday, we won't need to worry about changing the name of the variable in the future.
+        Width = GetLengthOrDefault(width, nameof(width));
+        Height = GetLengthOrDefault(height, nameof(height));
+
+
