@@ -590,4 +590,19 @@ Method overloading: multiple methods with the same name in a single class.
         Width = GetLengthOrDefault(width, nameof(width));
         Height = GetLengthOrDefault(height, nameof(height));
 
+- Readonly field can only be assigned at the declaration or in the constructor.
+    - after the object is created, it's impossible to change the assigned values.
+    - immutability means that once an object is created, it will never be modified.
+    ** pro tip: whenever we create a field we don't intend to change in the future, make it readonly if possible.
 
+- Const modifier can be applied to both variables and fields.
+    - those variables and fields must be assigned at declaration and can never be modified afterward.
+    - they must be given a compile-time constant value, so a value that can be evaluated during the compilation, before the application is run.
+    - const fields and variables should always be named with a capital letter even if they are private.
+
+- The main difference between const and readonly is that consts must be assigned a value at declaration.
+    - we use readonly fields when we want a field never to change after it has been set in the constructor
+
+- Object's properties:
+
+    -

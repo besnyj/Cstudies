@@ -1,31 +1,20 @@
-﻿
-using System;
+﻿using System;
 
-Dog cachorro1 = new Dog("Max", 30);
-Dog cachorro2 = new Dog("Pog", breed: "Max", weight: 30);
-
-cachorro1.Describe();
-cachorro2.Describe();
+Square square1 = new Square(10, 10);
+Console.WriteLine(square1.Height);
+square1.NumberOfSides = 10;
 
 
-public class Dog
+class Square
 {
-    private string _name;
-    private string _breed;
-    public int Weight;
+    public readonly int Height;
+    private readonly int Width;
+    public readonly int NumberOfSides;
 
-    public Dog(string name, string breed, int weight)
+    public Square(int height, int width)
     {
-        _name = name;
-        _breed = breed;
-        Weight = weight;
+        Height = height;
+        Width = width;
+        NumberOfSides = 4;
     }
-
-    public Dog(string name, int weight) : this(name, "mixed-breed", weight)
-    {
-    }
-
-    public void Describe() =>
-        Console.WriteLine($"Name: {this._name}, Breed: {this._breed}, Weight: {this.Weight}");
-
 }
