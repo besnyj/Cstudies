@@ -605,4 +605,64 @@ Method overloading: multiple methods with the same name in a single class.
 
 - Object's properties:
 
-    -
+    - properties are actually more related to methods than fields. Still, the names should be nouns.
+        - think of it as attributes in python.
+        - properties can use different modifiers, like private set and public get
+        ex of how to use it:
+        public int Width { get; private set; }
+        or
+        public int Height {
+            get => _height;
+            set => _height = value;
+        }
+        *can also use private operators on get or set.
+
+    - fields are variable-like, single access modifier, no separate getter and setter, cannot be overridden in derived classes and should always be private.
+    - properties are method-like, separate access modifiers for getter and setter, getter or setter may be removed, can be overridden in derived classes and can safely be public.
+
+- object initializers: useful to create simple objects.
+    - var person = new Person{
+        Name = "John",
+        YearOfBirth=1920
+        };
+    * it is also possible to do it like this:
+    var person = new Person("John"){
+        YearOfBirth = 1900
+        };
+
+- init setter:
+    public int YearOfBirth { get; init; } // the init makes it possible to set a value for the property when initializing the object, but won't be possible to change the value in the future.
+    when using a constructor, we must provide all the required parameters.
+
+- computed properties:
+
+    public string Description => $"A rectangle with width {Width} " + $"and height {_height}"; // this creates a get only property.
+    - as you can remember, properties are like methods. If you have a method to calculate Width and _height, it means that if we use the property 1000x, it will call the method 1000x.
+    - for that reason computed properties are no a good idea.
+    ** pro tip: properties should never be performance heavy.
+
+- Static classes and static methods:
+    - Stateless (has no state): it means the class can't create two different objects:
+        - For ex:
+            class Calculator
+            {
+                public int Add(int a, int b) => a+ b;
+            }
+            ** as you can see, it doesn't matter if we create 4 different objects, all of them will be the same as the class has no unique characteristics to be assigned.
+    - Stateful (has state-fields)
+
+    - So, static methods are methods that belong to a class as a whole, not to a specific instance.
+        - static methods cant use the instance data like values of fields or returned by properties.
+        - following the above example, it means that we don't need to create an object to use it.
+            we could simply call it "Calculate.Add(x,y)" like we do with the class Console when using WriteLine.
+
+    - if all the methods in a class are static, we can make the whole class static.
+        - a static class cannot be instantiated. It only works as a container for methods.
+        - static classes can only contain static methods. Otherwise, the code won't compile.
+            - on the other hand, non-static classes can contain static methods.
+
+    ex of a static class:
+
+        static class Calculator {
+            public static int Add(int a, int b) => a+b;
+        }
