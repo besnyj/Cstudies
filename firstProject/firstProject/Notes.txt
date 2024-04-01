@@ -671,5 +671,9 @@ Method overloading: multiple methods with the same name in a single class.
     ** pro tip: if a private method doesn't use instance data, make it static.
     - using fields of a class on a static method won't work because static methods call the class as a whole, not specific instances.
     - static methods are also faster.
-    - all const fields are implicity static because it can be saved to memory to be accessed whenever a new instance is created since it is always the same.
-        - it means that we acces the field by using the class name, not the instance's.
+    - all const fields are implicitly static because it can be saved to memory to be accessed whenever a new instance is created since it is always the same.
+        - it means that we access the field by using the class name, not the instance's.
+    
+    - generally, static fields are used when we need to share a single member between all instances.
+        - nonetheless, avoid using static fields.
+    
