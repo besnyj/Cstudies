@@ -676,4 +676,34 @@ Method overloading: multiple methods with the same name in a single class.
     
     - generally, static fields are used when we need to share a single member between all instances.
         - nonetheless, avoid using static fields.
+
+- Single Responsibility Principle: 
+    - first principle of SOLID that every developer should follow.
+    - A class should be responsible for only one thing / class should've only one reason to change.
+
+    * two programs doing the same thing can be of an entirely different quality.
+    * quality mostly shows up when we need to introduce changes in the program.
+
+    - Repositories are classes or components that encapsulate the logic required to access data sources.
+    * Environment.NewLine creates a new line in a file.
+
+- DRY:
+    - states we shouldn't have multiple places in the code where the same business decisions are defined.
+
+- How to add new files to a project:
+    - simply add a new Class/Interface file.
+- How to move classes to their own files:
+    - copy and paste.
+- What namespaces are:
+    - namespaces declare a scope that contains a set of related types.
+    - namespaces names should match the folders structure.
+    the types from the same namespace always see each other (no using directive is required).
+- What using directives are:
+    - allows you yo use types defined in a namespace without specifying the fully qualified namespace of that type.
+    - global using will import the namespace automatically to every file
+- What file-scoped namespace declarations are:
+    - smaller way to declare a namespace.
+
+
+
     
