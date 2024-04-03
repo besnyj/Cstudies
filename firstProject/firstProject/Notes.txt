@@ -733,8 +733,23 @@ Method overloading: multiple methods with the same name in a single class.
             - int firstSeasonAsNumber = (int)firstSeason;
         - even though you can cast, if the value is incompatible, for ex casting int on a string, it will cause             runtime crashes or incorrect results.
 
+- Polymorphism: The provision of a single interface to entities of different types.
+    - there is a generic concept of something, and this concept can be made concrete by multiple types.
+        all of them can be used wherever the generic concept is needed.
 
+- Inheritance: enable us to create new classes that reuse, extend, and modify
+    the behavior defined in other classes.
+    - the class whose members are inherited is called the base class,
+    and the class that inherits those members is called the derived class.
+    - Inheritance is an "is-a" kind of relationship.
+    public class Ingredient{
+    }
 
+    public class Cheddar : Ingredient {
+    }
 
+    - public methods are inherited to the other classes.
+    - private methods are not inherited to the other classes.
 
-    
+    - Protected access modifier: members can be used in the derived classes, but they can't be used outside. It means that you can use the members inside the class,
+        but can never call it from outside.

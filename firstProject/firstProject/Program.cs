@@ -1,33 +1,30 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 
-
-Square square1 = new Square(10, 10);
-
-var calculation = Square.CalculateArea(10, 10);
-Console.WriteLine(calculation);
-
-bool testEvenOrNot;
-int perimeter = Square.AmountOfSides();
+var pizza = new Pizza();
+pizza.AddIngredient(new Cheddar());
+Console.WriteLine(pizza.Describe());
+Cheddar cheese = new Cheddar();
+cheese.PublicMethod();
 
 
 
-class Square
+public class Pizza
 {
-    private int _width;
-    public int Height { get; }
+    private List<Ingredient> _ingredients = new List<Ingredient>();
 
-    public Square(int height, int width)
-    {
-        Height = height;
-        _width = width;
-    }
+    public void AddIngredient(Ingredient ingredient) => _ingredients.Add(ingredient);
 
-
-
-    public static int CalculateArea(int x, int y) => x * y;
-
-    public static int AmountOfSides() => 4;
+    public string Describe() => $"This is a pizza with {string.Join(", ", _ingredients)}";
 }
 
+public class Ingredient
+{
+    protected void Working() => Console.WriteLine("Working");
+    public string PublicMethod() => "This method is PUBLIC in the Ingredient class. ";
+}
+
+public class Cheddar : Ingredient
+{
+    void Teste() => Working();
+}
