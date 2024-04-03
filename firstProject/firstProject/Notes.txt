@@ -671,5 +671,70 @@ Method overloading: multiple methods with the same name in a single class.
     ** pro tip: if a private method doesn't use instance data, make it static.
     - using fields of a class on a static method won't work because static methods call the class as a whole, not specific instances.
     - static methods are also faster.
-    - all const fields are implicity static because it can be saved to memory to be accessed whenever a new instance is created since it is always the same.
-        - it means that we acces the field by using the class name, not the instance's.
+    - all const fields are implicitly static because it can be saved to memory to be accessed whenever a new instance is created since it is always the same.
+        - it means that we access the field by using the class name, not the instance's.
+    
+    - generally, static fields are used when we need to share a single member between all instances.
+        - nonetheless, avoid using static fields.
+
+- Single Responsibility Principle: 
+    - first principle of SOLID that every developer should follow.
+    - A class should be responsible for only one thing / class should've only one reason to change.
+
+    * two programs doing the same thing can be of an entirely different quality.
+    * quality mostly shows up when we need to introduce changes in the program.
+
+    - Repositories are classes or components that encapsulate the logic required to access data sources.
+    * Environment.NewLine creates a new line in a file.
+
+- DRY:
+    - states we shouldn't have multiple places in the code where the same business decisions are defined.
+
+- How to add new files to a project:
+    - simply add a new Class/Interface file.
+- How to move classes to their own files:
+    - copy and paste.
+- What namespaces are:
+    - namespaces declare a scope that contains a set of related types.
+    - namespaces names should match the folders structure.
+    the types from the same namespace always see each other (no using directive is required).
+- What using directives are:
+    - allows you yo use types defined in a namespace without specifying the fully qualified namespace of that type.
+    - global using will import the namespace automatically to every file
+- What file-scoped namespace declarations are:
+    - smaller way to declare a namespace.
+
+- enum: enum is a type that defines a set of named constants, for ex:
+
+    public enum Season{
+        Spring,
+        Summer,
+        Autumn,
+        Winter,
+    }
+
+    or
+
+    public enum WarningSeverityLevel{
+        Info,
+        Warn,
+        Error,
+        Critical
+    }
+    Season firstSeason = Season.Spring;
+
+    - every value of an enum is represented as an integer by default: 0, 1, 2, 3.....
+    - however, if we Console.WriteLine(firstSeason), it will print the name of the enum.
+        - to see it's actual value, we must use casting.
+            - casting happens when we assign a data type to another.
+        - because C# is statically typed, it doesnt allow a type A to be assigned to a type B
+        - for ex: int firstSeasonAsNumber = firstSeason; won't work because we are assigning a type Season to a             type int.
+        - So, we force it by using a type conversion, this is casting:
+            - int firstSeasonAsNumber = (int)firstSeason;
+        - even though you can cast, if the value is incompatible, for ex casting int on a string, it will cause             runtime crashes or incorrect results.
+
+
+
+
+
+    
