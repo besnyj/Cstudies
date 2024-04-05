@@ -772,3 +772,39 @@ Method overloading: multiple methods with the same name in a single class.
     - it is also possible to create a list of type Ingredient and add the derived classes to the list.
 
     ** summary: virtual methods or properties may be overridden by the inheriting types.
+
+- Multiple inheritance: sometimes we the hierarchy to contain more than  2 types.
+    - Using the ingredient example from above, let's assume we wanted to create a class called Cheese.
+        - that class would be a derived class from ingredient. If we then create another class called Cheddar whose base class is Cheese,
+            it would also inherit from the Ingredient class.
+            Cheddar > Cheese > Ingredient
+            - it means for example that if a method accepts a Ingredient type, it will also accepts a Cheddar type object.
+            - having a deeper hierarchy is good to understand some more complex relationships, but be careful to not over use it or it will become something hard to understand.
+
+            - In C# it is not possible to have more than 1 base class.
+                - the reason why you can't have multiple base classes is because it leads to a problem called the diamond problem.
+                ** it is possible through interfaces.
+
+
+- System.Object: is the ultimate base class for all the other classes created.
+     - the roots of every class.
+     - It means we can use many different methods through many different classes.
+
+- ToString(): method used to convert things to strings.
+    - However, we can use it a as a field in classes to print properties.
+
+    - public override string ToString() => {Property};
+
+    So, when we try Console.WriteLine(Class), it will not print the name of the class, but the property we defined in the ToString field.
+        - it means that no more it will print the name of the TYPES, but the variable assigned.
+
+- base keyword:
+
+    - constructor >> public Cheddar(int priceIfExtraTopping, int agedForMonths) : base(priceIfExtraTopping)
+    {
+        AgedForMonths = agedForMonths;
+    }
+
+    ** the base keyword is responsible for initializing the properties all the Ingredients have in common.
+        - as we can see, priceIfExtraTopping is the common property.
+        - the base keyword is also useful when we want to refer to something from the base class in a derived class.
