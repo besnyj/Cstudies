@@ -753,3 +753,22 @@ Method overloading: multiple methods with the same name in a single class.
 
     - Protected access modifier: members can be used in the derived classes, but they can't be used outside. It means that you can use the members inside the class,
         but can never call it from outside.
+
+    - inheritance won't work with private fields
+    - also, it is possible to store a Cheddar object in a Ingredient variable:
+        - Ingredient ingredient = new Cheddar();
+
+    - virtual methods or properties may be overridden by the inheriting types.
+    - it is useful for example:
+
+    Let's say you have the a string called Name on the Cheddar class. Although the variable has a Cheddar object stored in it,
+        you won't be able to call Name because it is not a property of the Ingredient class. The way to solve the issue is to create
+        a field in the Ingredient class also called Name. However, if we use the Cheddar object to call Name, it will display the
+        Ingredient's class Name, not the Cheddar's. To solve that, we add the "override" modifier to the field in the Cheddar's class and "virtual" in the Ingredient class,
+        so when we call it, C# will understand that we are calling it from the Cheddar class.
+
+        public virtual/override string String => "Bla";
+
+    - it is also possible to create a list of type Ingredient and add the derived classes to the list.
+
+    ** summary: virtual methods or properties may be overridden by the inheriting types.
