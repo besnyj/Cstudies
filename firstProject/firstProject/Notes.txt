@@ -808,3 +808,31 @@ Method overloading: multiple methods with the same name in a single class.
     ** the base keyword is responsible for initializing the properties all the Ingredients have in common.
         - as we can see, priceIfExtraTopping is the common property.
         - the base keyword is also useful when we want to refer to something from the base class in a derived class.
+
+- Implicit conversion:
+    - doesnt require cast expression
+    - is done when conversion is safe and lossless
+
+- Decimal: is used to represent precisely floating-point numbers.
+    - useful for things like money.
+    decimal a = 10.01m; // the "m" at the end is necessary so we can tell C# it is a decimal and not a double.
+    - if done wrong, we will face runtime crashes.
+
+- Double is also used to represent floating-point numbers in C#. Although it is not as precise as a decimal, it is much faster.
+
+- It is possible to assign for example and int value into a decimal, but the conversion is implicit because it happens behind the scenes.
+
+- Explicit conversion: used when there is a trim in the data.
+    - if for instance we try to do:
+    - decimal c = 10.01m;
+      int d = c;
+
+      it won't work. As C# won't implicitly convert it because of the data loss.
+      However, we use:
+
+      int d = (int)c;
+
+      C# will compile because it understands we want to ignore the data loss.
+      - However, it doesnt mean it will work properly. Only use explicit casting when you are 100% sure it will work.
+
+      - By the way, the maximum value a int can store is 2147483647.
