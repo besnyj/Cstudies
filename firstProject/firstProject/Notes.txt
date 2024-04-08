@@ -842,9 +842,23 @@ Method overloading: multiple methods with the same name in a single class.
         ex: Ingredient ingredient = new Cheddar(2, 12);
     - Downcasting is the opposite, assigning the the base class into derived class.
         ex: Cheddar cheddar = (Cheddar)randomIngredient;
+        * we must be careful because a variable of base type may store an object that is not convertable
+            - use is operator for that buy essentially you should not do this at all.
 
-Is operator: checks if some object is of a given type.
+- Is operator: checks if some object is of a given type.
     ex: string word = "hello";
         bool isString = word is string;
         bool isInt = word is int;
+    
+    We can use it to check if the conversion is possible:
+    ex:
+        if (randomIngredient is Cheddar cheddar)
+        {
+            Console.WriteLine("cheddar object:" + cheddar);
+        }
+        
+        
+- Null is a special value that means a field or a variable doesn't hold any value or instance 
+    - NullReferenceException means we tried to use a member of null object. Not possible because null object is simply no object.
+    - most commonly seen error in C#
     

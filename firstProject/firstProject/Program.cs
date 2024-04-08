@@ -1,6 +1,8 @@
 ﻿using System;
 
 Food tomato = new Tomato("Vegetable", 10);
+bool isTomato = tomato is Tomato;
+Console.WriteLine(isTomato);
 public class Food
 {
     public virtual string Name => "This is a food";
