@@ -912,7 +912,12 @@ Method overloading: multiple methods with the same name in a single class.
 - Sealed classes and methods:
     - sealed modifier prevents other classes from inheriting from a given class.
         - for ex, if we create a public sealed class Mozzarella, we are intending for it to never be derived. It's one of a kind.
+        - the same is valid for methods.
+    - only virtual, overridden methods can be sealed.
+    - static classes is implicitly sealed.
     
-    
+    - Static classes are sealed because they only contain static methods and static methods cannot be overridden.
+        The whole point of overriding is to have a specific implementation of a method used when executed on a specific instance
+        but static methods are not called on instances but static methods are not called on instances. Which makes static classes useless as base types.
 
     
