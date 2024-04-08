@@ -1,9 +1,12 @@
 ﻿using System;
 
 Food tomato = new Tomato("Vegetable", 10);
-bool isTomato = tomato is Tomato;
-Console.WriteLine(isTomato);
-public class Food
+int value = 10;
+
+
+
+
+public abstract class Food
 {
     public virtual string Name => "This is a food";
     public virtual int Quantity => 0;
@@ -14,6 +17,7 @@ public class Food
         this.Type = type;
     }
 
+    public abstract void Prepare();
 }
 
 public class Tomato : Food
@@ -28,5 +32,10 @@ public class Tomato : Food
 
     public override string Name => $"Tomato {base.Name}";
     public override string ToString() => Name;
+
+    public override void Prepare()
+    {
+        Console.WriteLine("Smash");
+    }
 }
 

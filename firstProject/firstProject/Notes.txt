@@ -857,8 +857,62 @@ Method overloading: multiple methods with the same name in a single class.
             Console.WriteLine("cheddar object:" + cheddar);
         }
         
+        - we can also create an inline temporary variable:
+        if (randomIngredient is int >>>>>asInt<<<<<)
+        {
+            return asInt;
+        }
+        
         
 - Null is a special value that means a field or a variable doesn't hold any value or instance 
     - NullReferenceException means we tried to use a member of null object. Not possible because null object is simply no object.
     - most commonly seen error in C#
+    - is not null cannot be overloaded.
+    - no standard types can be assigned null, for ex ints and strings
+    
+- "as" operator can be used to conversion too.
+    - the difference between this and other method is that if the cast fails on a normal conversion, it will cause an exception
+        meanwhile if we use the "as" operator, it will give a null value in case of a failed cast.
+    - only works to cast to nullable types.
+    
+    if (cheddar is not null)
+    {
+        Console.WriteLine(cheddar.Name)
+    }
+    else
+    {
+        Console.WriteLine("")
+    }
+    
+- Abstract classes:
+    - serve as base classes for other, more concrete types.
+    - abstract classes cannot be instantiated.
+    - abstract classes can also defined abstract methods and properties.
+    
+    public abstract class Ingredient
+    {
+    }
+
+- Abstract methods
+    - virtual methods are methods that may be overriden in the derived classes.
+    - However, abstract can only be defined in abstract classes.
+    - They don't have implementations so their body are empty.
+        - ex: public abstract void Prepare();
+    - all abstract are implicitly virtual, which means we can use them in the derived classes.
+        - it's obligatory to override them in the non-abstract derived classes. If the derived class is also abstract,
+            there is no need to override it.
+            
+- Difference virtual and abstract:
+    - virtual must have an implementation.
+    - overriding it is optional.
+    
+    - abstract modifier can't have an implementation.
+    - overriding it is obligatory.
+    
+- Sealed classes and methods:
+    - sealed modifier prevents other classes from inheriting from a given class.
+        - for ex, if we create a public sealed class Mozzarella, we are intending for it to never be derived. It's one of a kind.
+    
+    
+
     
