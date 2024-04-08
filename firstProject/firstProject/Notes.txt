@@ -836,3 +836,15 @@ Method overloading: multiple methods with the same name in a single class.
       - However, it doesnt mean it will work properly. Only use explicit casting when you are 100% sure it will work.
 
       - By the way, the maximum value a int can store is 2147483647.
+      
+- Difference between upcasting and downcasting.
+    - Upcasting happens when we convert a derived class into the base class.
+        ex: Ingredient ingredient = new Cheddar(2, 12);
+    - Downcasting is the opposite, assigning the the base class into derived class.
+        ex: Cheddar cheddar = (Cheddar)randomIngredient;
+
+Is operator: checks if some object is of a given type.
+    ex: string word = "hello";
+        bool isString = word is string;
+        bool isInt = word is int;
+    
