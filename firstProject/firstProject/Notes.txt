@@ -920,4 +920,56 @@ Method overloading: multiple methods with the same name in a single class.
         The whole point of overriding is to have a specific implementation of a method used when executed on a specific instance
         but static methods are not called on instances but static methods are not called on instances. Which makes static classes useless as base types.
 
-    
+- Extension methods:
+
+    When a type we use lacks a method we need:
+        - if this type is defined in out code, we can simply add it.
+        - we can create a type derived from this type, and add the method there.
+            But it may overcomplicate our code, or the type we want to extend might be sealed.
+
+    - Extension methods allow us to seemingly add methods to an existing type without modifying this type's source code.
+    Steps:
+        - first, we might create a folder called Extensions.
+        - second, create a file for the type of extension we are creating, For example, if it is string related, we may
+        call it "StringExtensions.cs".
+        - third, we create the method. Extension methods can only be defined in static classes.
+        - fourth, the parameter must always have a "this" operator.
+        - fifth, other parameters must always come after the parameter we will use to extend.
+
+        Ex:
+            public static class StringExtensions
+                {
+                public static int CountLines(this string input) =>
+                    input.Split(Environment.NewLine).Length;
+                }
+
+        when importing, it allows us to use syntax like the method is natively from the String class:
+            - using Project.Extensions;
+              string Text = @"aaaa";
+              Text.CountLines()
+
+        - these methods are very useful in allowing us to create functionality to types that we don't have access to.
+        - they allow us to seemingly add methods to types that can't have methods defined like Enums.
+
+        ** pro tip:
+         - let's say I want to create a method called Next, which will return what is the next season from an Enum.
+
+         public Enum {
+            Spring,
+            Summer,
+            Autumn,
+            Winter
+         }
+
+         When creating the method,
+            public static Season Next(this Season season)
+            {
+                int seasonAsInt = (int)season;
+                int nextSeason = (seasonAsInt + 1) % 4;
+                return (Season)nextSeason
+            }
+
+            As you can see above, there could be a range issue on line 968 as if we had and int greater than 3, there would
+                be no corresponding season. However, when we add the % 4, we make it calculate the modulo of four of the result,
+                making it always to be a between 0 to 3 int.
+- Multiline string - add the @ at the beginning. Ex: @"aaaaa"
