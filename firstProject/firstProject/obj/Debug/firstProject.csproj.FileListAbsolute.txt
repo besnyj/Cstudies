@@ -10,9 +10,3 @@ C:/Users/Felipe/Desktop/github_clones/Cstudies/firstProject/firstProject/obj/Deb
 C:/Users/Felipe/Desktop/github_clones/Cstudies/firstProject/firstProject/obj/Debug/firstProject.csproj.CoreCompileInputs.cache
 C:/Users/Felipe/Desktop/github_clones/Cstudies/firstProject/firstProject/obj/Debug/firstProject.exe
 C:/Users/Felipe/Desktop/github_clones/Cstudies/firstProject/firstProject/obj/Debug/firstProject.pdb
-C:\Users\Felipe\Desktop\github_clones\Cstudies\firstProject\firstProject\bin\Debug\firstProject.exe
-C:\Users\Felipe\Desktop\github_clones\Cstudies\firstProject\firstProject\bin\Debug\firstProject.pdb
-C:\Users\Felipe\Desktop\github_clones\Cstudies\firstProject\firstProject\obj\Debug\firstProject.csproj.AssemblyReference.cache
-C:\Users\Felipe\Desktop\github_clones\Cstudies\firstProject\firstProject\obj\Debug\firstProject.csproj.CoreCompileInputs.cache
-C:\Users\Felipe\Desktop\github_clones\Cstudies\firstProject\firstProject\obj\Debug\firstProject.exe
-C:\Users\Felipe\Desktop\github_clones\Cstudies\firstProject\firstProject\obj\Debug\firstProject.pdb

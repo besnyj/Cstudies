@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 Food tomato = new Tomato("Vegetable", 10);
 int value = 10;
@@ -17,6 +18,7 @@ public abstract class Food
         this.Type = type;
     }
 
+
     public abstract void Prepare();
 }
 
@@ -24,6 +26,7 @@ public class Tomato : Food
 {
 
     public override int Quantity { get; }
+    
 
     public Tomato(string type, int quantity) : base(type)
     {

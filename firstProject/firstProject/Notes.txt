@@ -973,3 +973,46 @@ Method overloading: multiple methods with the same name in a single class.
                 be no corresponding season. However, when we add the % 4, we make it calculate the modulo of four of the result,
                 making it always to be a between 0 to 3 int.
 - Multiline string - add the @ at the beginning. Ex: @"aaaaa"
+
+- Interfaces:
+
+    - interfaces create a "behaves-like" kind of relationship between types.
+    how to set up an interface:
+        public interface IFlyable // the "I" uppercase is convention for naming interfaces.
+        {
+            void Fly();
+        }
+
+        public class Bird : IFlyable
+        {
+            public void Fly() => Console.WriteLine("Flies using wings")
+        }
+
+        public class Plane : IFlyable
+        {
+            public void Fly() => Console.WriteLine("Flies using turbines")
+        }
+
+    - as you can see, even though the classes are not same-type classes like Food being base for Cheese, Bread and etc,
+    they share common characteristics like flying abilities. Interfaces are useful for classes that behave in a certain way
+    but still are not related.
+
+    - an interface defines a contract, whatever type that implements the interface will have to contain a method with
+     the same signature. The methods from the Interface need to be present in the class using it.
+    - a method that implements the interface must be public.
+    - the methods in the interface are implicitly virtual.
+    - even though a class cannot derive from multiple base classes, it can sign contracts with many interfaces.
+    - also, one interface may extend another.
+
+    interface IAnimal
+    {
+        void MakeSound();
+    }
+
+    interface IHousePet : IAnimal
+    {
+        TaketoVet();
+    }
+
+    - notice that we don't need to write again the same method as it is "inherited" from the IAnimal interface.
+    - 99% of cases, interfaces do not contain anything else but declaration of methods and properties.
