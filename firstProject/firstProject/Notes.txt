@@ -1032,3 +1032,51 @@ Method overloading: multiple methods with the same name in a single class.
     // learn more about it at https://www.talkingdotnet.com/default-implementations-in-interfaces-in-c-sharp-8/
 
 
+- Differences between interfaces and abstract classes.
+
+** pro tips
+    - interfaces:
+        - defines the set of operations that the implementing type must provide.
+        - does not provide any implementations on its own.
+        - does not contain any data.
+
+        - interfaces abstract over behavior, defines what an object can do. Group of types share behavior.
+            Ex: birds, planes and kites can fly.
+            - Not sure what it is, but sure what it is able to do.
+            - if what they have in common is a verb, you should use interfaces.
+          ** one of the most common interface is ICollection, which will contain methods like Add, Contains, Remove, Clear
+          and etc which will make it easier when working with collections
+
+    - abstract class:
+        - blueprint for derived classes, representing a general category of things.
+        - may provide implementations in non-abstract methods. Can also have abstract methods.
+        - can contain data.
+
+        - abstract classes abstract over alikeness, defines what an object is. Group of types share general category of things.
+            Ex: birds, snakes and dogs are animals.
+            - Not sure what is able to do, but sure what it is.
+            - if what they gave in common is a noun, you should use abstract class.
+
+            check table at https://www.udemy.com/course/ultimate-csharp-masterclass/learn/lecture/34726646#announcements for more detailed information
+
+    - a technical view:
+
+    Interface:
+        - set definitions of methods.
+        - doesnt no provide any implementations on its own.
+        - specifies a contract that the implementing method must fulfill
+        - all methods are implicitly public
+        - methods cannot be sealed or static
+        - methods are implicitly virtual
+        - can only contain method or properties definitions
+        - a class can implement multiple interfaces
+
+    Abstract class:
+        - a type existing only to be derived from.
+        - can provide any implementations on its own.
+        - only abstract methods must be overridden in the derived types
+        - non-abstract methods can have any access modifiers
+        - can contain sealed and static methods
+        - non- abstract methods are not implicitly virtual
+        - can also have implementations, fields, and constructors.
+        - a class cannot inherit from multiple classes.
