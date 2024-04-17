@@ -1016,3 +1016,19 @@ Method overloading: multiple methods with the same name in a single class.
 
     - notice that we don't need to write again the same method as it is "inherited" from the IAnimal interface.
     - 99% of cases, interfaces do not contain anything else but declaration of methods and properties.
+
+    - cool thing about interfaces is that we can also create methods for specific classes without breaking the code. If
+    you remember right, all the classes that sign contracts with an interface needs to implement all of its methods.
+    However, there is a workaround for that.
+
+    interface ICar
+    {
+        void GetSpeed();
+        void GetMileage();
+        public void SendCommand() {} // here, we create a method that DON'T need to be implement in a class that uses
+                                     // this interfaces. However, we can use it if we want and C# will use the implementation instead of this default method.
+    }
+
+    // learn more about it at https://www.talkingdotnet.com/default-implementations-in-interfaces-in-c-sharp-8/
+
+
