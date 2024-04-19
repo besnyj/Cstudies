@@ -1,0 +1,15 @@
+/Users/besnyj/Desktop/Cstuides/firstProject/test/bin/Debug/net8.0/test
+/Users/besnyj/Desktop/Cstuides/firstProject/test/bin/Debug/net8.0/test.deps.json
+/Users/besnyj/Desktop/Cstuides/firstProject/test/bin/Debug/net8.0/test.runtimeconfig.json
+/Users/besnyj/Desktop/Cstuides/firstProject/test/bin/Debug/net8.0/test.dll
+/Users/besnyj/Desktop/Cstuides/firstProject/test/bin/Debug/net8.0/test.pdb
+/Users/besnyj/Desktop/Cstuides/firstProject/test/obj/Debug/net8.0/test.GeneratedMSBuildEditorConfig.editorconfig
+/Users/besnyj/Desktop/Cstuides/firstProject/test/obj/Debug/net8.0/test.AssemblyInfoInputs.cache
+/Users/besnyj/Desktop/Cstuides/firstProject/test/obj/Debug/net8.0/test.AssemblyInfo.cs
+/Users/besnyj/Desktop/Cstuides/firstProject/test/obj/Debug/net8.0/test.csproj.CoreCompileInputs.cache
+/Users/besnyj/Desktop/Cstuides/firstProject/test/obj/Debug/net8.0/test.sourcelink.json
+/Users/besnyj/Desktop/Cstuides/firstProject/test/obj/Debug/net8.0/test.dll
+/Users/besnyj/Desktop/Cstuides/firstProject/test/obj/Debug/net8.0/refint/test.dll
+/Users/besnyj/Desktop/Cstuides/firstProject/test/obj/Debug/net8.0/test.pdb
+/Users/besnyj/Desktop/Cstuides/firstProject/test/obj/Debug/net8.0/test.genruntimeconfig.cache
+/Users/besnyj/Desktop/Cstuides/firstProject/test/obj/Debug/net8.0/ref/test.dll

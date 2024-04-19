@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TODOlist", "TODOlist\TODOli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "classExample", "classExample\classExample.csproj", "{48C3973B-6B72-4F3E-A410-2B0B0ED6F6FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{4D133447-0961-4C28-AF94-C496026CA66F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +50,9 @@ Global
 		{48C3973B-6B72-4F3E-A410-2B0B0ED6F6FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48C3973B-6B72-4F3E-A410-2B0B0ED6F6FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48C3973B-6B72-4F3E-A410-2B0B0ED6F6FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D133447-0961-4C28-AF94-C496026CA66F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D133447-0961-4C28-AF94-C496026CA66F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D133447-0961-4C28-AF94-C496026CA66F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D133447-0961-4C28-AF94-C496026CA66F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

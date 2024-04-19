@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 
 Food tomato = new Tomato("Vegetable", 10);
 int value = 10;
@@ -26,7 +27,7 @@ public class Tomato : Food
 {
 
     public override int Quantity { get; }
-    
+
 
     public Tomato(string type, int quantity) : base(type)
     {
@@ -36,9 +37,6 @@ public class Tomato : Food
     public override string Name => $"Tomato {base.Name}";
     public override string ToString() => Name;
 
-    public override void Prepare()
-    {
-        Console.WriteLine("Smash");
-    }
+    public override void Prepare() => Console.WriteLine("Smash");
 }
 
