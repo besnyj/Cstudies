@@ -1081,3 +1081,16 @@ Method overloading: multiple methods with the same name in a single class.
         - can also have implementations, fields, and constructors.
         - a class cannot inherit from multiple classes.
 
+// a library is a collection of pre-written code that we can use to make our programming easier
+
+- JSON: useful to translate objects to textual formats.
+    JsonSerializer is a part of .NET.
+    - to "translate" an object to JSON in C#, we can use the built-in JsonSerializer:
+        var asJson = JsonSerializer.Serialize(object) // Serialize returns a object as a JSON string.
+        ** escaping a character
+    - you can also do the inverse, turn a JSON back to an object
+
+    var personJson = "{\"FirstName\": \"Jorge\"}"; ** \ before " works to tell C# the " is not related to close the string, but it is part of it. escaping a character
+
+    var personFromJson = JsonSerializer.Deserialize<Person>(personJson); // Deserialize from the JsonSerializer lib will convert it back to an object.
+                                                                         // between the <> you need to declare the object type.
